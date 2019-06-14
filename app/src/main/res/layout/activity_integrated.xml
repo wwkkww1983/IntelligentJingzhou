@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include layout="@layout/ac_top_layout_func" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:background="@drawable/ac_main_bg_line"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_main_query_btn"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ac_main_query"
+                android:gravity="center_horizontal"
+                android:text="@string/query_info" />
+
+            <TextView
+                android:id="@+id/ac_main_keep_btn"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ac_main_keep"
+                android:gravity="center_horizontal"
+                android:text="@string/task_keep" />
+
+            <TextView
+                android:id="@+id/ac_main_scrap_btn"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ac_main_scrap"
+                android:gravity="center_horizontal"
+                android:text="@string/task_scrap" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ac_main_temp_btn"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ac_main_temp"
+                android:gravity="center_horizontal"
+                android:text="@string/task_temporary_deposit" />
+
+            <TextView
+                android:id="@+id/ac_main_btn_in_store"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ac_main_temp"
+                android:gravity="center_horizontal"
+                android:text="@string/task_in_store" />
+
+            <TextView
+                android:id="@+id/ac_main_user_btn"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/select_set_duty_leader"
+                android:gravity="center_horizontal"
+                android:text="@string/user_manage" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

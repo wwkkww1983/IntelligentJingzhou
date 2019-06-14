@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    tools:context="com.zack.intelligent.ui.QueryActivity">
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include
+        layout="@layout/ac_top_layout_func"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/query_tabs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_title_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/query_gun_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_query_gun_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gun_info" />
+
+                <TextView
+                    android:id="@+id/txt_query_gun_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="枪弹信息"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/query_warning_log"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_query_warning_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alarm_log" />
+
+                <TextView
+                    android:id="@+id/txt_query_warning_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="报警日志"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/query_get_back_gun_log"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_query_get_back_gun_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/oper_gun_log" />
+
+                <TextView
+                    android:id="@+id/txt_query_get_back_gun_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="领还枪日志"
+                    android:textSize="@dimen/text_size_10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/query_normal_opration_log"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_query_normal_opration_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/normal_log" />
+
+                <TextView
+                    android:id="@+id/txt_query_normal_opration_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="操作日志"
+                    android:textSize="@dimen/text_size_10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_capture_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_capture_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/query_capture_icon" />
+
+                <TextView
+                    android:id="@+id/tv_capture_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="抓拍照片"
+                    android:textSize="@dimen/text_size_10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:layout_weight="9"
+            android:background="@drawable/main_bg"/>
+
+    </LinearLayout>
+</LinearLayout>

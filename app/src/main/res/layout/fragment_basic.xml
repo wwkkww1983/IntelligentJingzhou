@@ -1,0 +1,508 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zack.intelligent.fragment.BasicFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="枪柜列表"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="编号"
+                    android:textColor="@color/simple_blue"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="类型"
+                    android:textColor="@color/simple_blue"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_view_guncab_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice">
+
+            </ListView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/ac_main_bg_line">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5dp">
+
+                    <Button
+                        android:id="@+id/btn_sync_system_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_48dp"
+                        android:layout_margin="@dimen/dimen_3dp"
+                        android:text="同步时间" />
+
+                    <Button
+                        android:id="@+id/btn_update_member_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_48dp"
+                        android:layout_margin="@dimen/dimen_3dp"
+                        android:text="更新数据" />
+
+                    <Button
+                        android:id="@+id/btn_debug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_3dp"
+                        android:text="调试"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/basic_edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_3dp"
+                        android:background="@drawable/shape_edt_bg"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:id="@+id/basic_tv_server_ip"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="服务器ip：" />
+
+                    <EditText
+                        android:id="@+id/basic_et_server_ip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/basic_tv_server_ip"
+                        android:background="@drawable/shape_edt_bg"
+                        android:ems="15"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:id="@+id/basic_tv_server_port"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="端口：" />
+
+                    <EditText
+                        android:id="@+id/basic_et_server_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/basic_tv_server_port"
+                        android:background="@drawable/shape_edt_bg"
+                        android:ems="15"
+                        android:maxLines="1"
+                        android:textColor="@color/black" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_5dp">
+
+                    <TextView
+                        android:id="@+id/basic_tv_room_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="枪弹库名称：" />
+
+                    <EditText
+                        android:id="@+id/basic_et_room_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/basic_tv_room_name"
+                        android:background="@drawable/shape_edt_bg"
+                        android:ems="15"
+                        android:maxLines="1"
+                        android:inputType="none"
+                        android:editable="false"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_set_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:text="保存"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="功能选择"
+                            android:textSize="@dimen/text_size_22sp" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_fingerprint"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="指纹仪" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_vein"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="指静脉" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_iris"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="虹膜" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_face"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="人脸" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_alarm_switch"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="报警开关" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_alcohol"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="酒精检测" />
+
+                        <CheckBox
+                            android:id="@+id/basic_cb_humiture"
+                            style="@style/MyToggleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_5dp"
+                            android:text="温湿度检测" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="登录方式"
+                                android:textSize="@dimen/text_size_22sp" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_bio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="生物特征识别"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:layout_margin="@dimen/dimen_5dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_pwd"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="用户名+密码"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:layout_margin="@dimen/dimen_5dp"/>
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="第一用户登入方式"
+                                android:textSize="@dimen/text_size_22sp" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_first_finger"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="指纹" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_first_vein"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:text="指静脉"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:gravity="center"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_first_iris"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:text="虹膜"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:gravity="center"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_first_face"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:text="人脸"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:gravity="center"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="第二用户登入方式"
+                                android:textSize="@dimen/text_size_22sp" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_second_finger"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="指纹" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_second_vein"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="指静脉" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_second_iris"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="虹膜" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_second_face"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="人脸" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/basic_ll_bios_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="验证方式"
+                                android:textSize="@dimen/text_size_22sp" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_bios_finger"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="指纹" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_bios_vein"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="指静脉" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_bios_iris"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:gravity="center"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="虹膜" />
+
+                                <RadioButton
+                                    android:id="@+id/basic_rb_bios_face"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_margin="@dimen/dimen_5dp"
+                                    android:button="@drawable/selector_cb_bg"
+                                    android:text="人脸" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/basic_txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/basic_txt_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

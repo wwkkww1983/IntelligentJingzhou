@@ -1,0 +1,98 @@
+<resources>
+
+    <style name="AppTranslucentStatusBarCover" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textViewStyle">@style/textViewStyle</item>
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+        <item name="android:editTextStyle">@style/editTextStyle</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:textColor">@dimen/text_size_18sp</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <!--<style name="rbStyle">-->
+        <!--&lt;!&ndash;<item name="android:drawableLeft">@drawable/selector_cb_bg</item>&ndash;&gt;-->
+        <!--<item name="android:button">@drawable/selector_cb_bg</item>-->
+        <!--<item name="android:textSize">@dimen/text_size_20sp</item>-->
+    <!--</style>-->
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        //Dialog的windowFrame框为无
+        <item name="android:windowFrame">@null</item>
+        //是否浮现在activity之上
+        <item name="android:windowIsFloating">true</item>
+        //是否透明
+        <item name="android:windowIsTranslucent">true</item>
+        //是否隐藏title
+        <item name="android:windowNoTitle">true</item>
+        //设置dialog的背景
+        <item name="android:background">@android:color/transparent</item>
+        //显示区域背景是否透明
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5
+        <item name="android:backgroundDimAmount">0.7</item>
+        //显示区域以外是否使用黑色半透明背景
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+    </style>
+
+    <style name="alert_dialog" parent="@android:style/Theme.Dialog">
+        //Dialog的windowFrame框为无
+        <item name="android:windowFrame">@null</item>
+        //是否浮现在activity之上
+        <item name="android:windowIsFloating">true</item>
+        //是否半透明
+        <item name="android:windowIsTranslucent">true</item>
+        //是否显示title
+        <item name="android:windowNoTitle">true</item>
+        //设置dialog的背景
+        <item name="android:background">@color/translucent</item>
+        //显示区域背景是否透明
+        <item name="android:windowBackground">@android:color/transparent</item>
+        //就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，
+        //dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5
+        <item name="android:backgroundDimAmount">0.5</item>
+        //显示区域以外是否使用黑色半透明背景
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyToggleButton2" parent="@android:style/Widget.CompoundButton">
+        <item name="android:button">@drawable/setting_checkbox_button2</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabLayoutTextStyle</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" >
+        <item name="android:textSize">@dimen/text_size_26sp</item>
+    </style>
+</resources>

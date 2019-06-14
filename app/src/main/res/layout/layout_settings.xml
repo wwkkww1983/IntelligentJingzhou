@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include layout="@layout/ac_top_layout_func"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/setting_left_tabs"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/ac_main_bg_line">
+
+            <LinearLayout
+                android:id="@+id/txt_setup_item_basic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本"
+                    android:drawableTop="@drawable/basic_setting"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_setup_music"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_debug"
+                    android:text="调试"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_setup_lock"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/lock"
+                    android:text="枪锁"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_setup_serial"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/serialport"
+                    android:gravity="center_horizontal"
+                    android:text="串口"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/txt_setup_other"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:drawableTop="@drawable/other_settings"
+                    android:gravity="center_horizontal"
+                    android:text="其它" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/txt_setup_system_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@drawable/about"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/setting_left_tabs"
+            >
+        </FrameLayout>
+
+    </RelativeLayout>
+</LinearLayout>

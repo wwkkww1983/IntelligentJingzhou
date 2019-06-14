@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zack.intelligent.ui.MainActivity">
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include layout="@layout/ac_top_layout_func" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_ll_left_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main_rl_duty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_duty_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:src="@drawable/workbg" />
+
+                <ImageView
+                    android:id="@+id/main_iv_handover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/iv_duty_bg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:src="@drawable/btn_work" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/main_tv_leader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:text="值班领导"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <TextView
+                        android:id="@+id/main_tv_manager"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:text="值班管理员"
+                        android:textColor="#000"
+                        android:textSize="@dimen/text_size_12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ll_functional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/main_btn_get_gun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="领取枪弹" />
+
+                <Button
+                    android:id="@+id/main_btn_back_gun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="归还枪弹" />
+
+                <Button
+                    android:id="@+id/main_btn_urgency_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="紧急开锁" />
+
+                <Button
+                    android:id="@+id/main_btn_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="管理维护" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_ll_left_view"
+            android:layout_margin="@dimen/dimen_5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/main_ll_include"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+                <include
+                    layout="@layout/layout_gun_info"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_rv_gun_ammo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/main_ll_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                >
+                <Button
+                    android:id="@+id/main_btn_pre_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="上一页"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/main_tv_cur_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="1/1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/main_btn_next_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:text="下一页"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

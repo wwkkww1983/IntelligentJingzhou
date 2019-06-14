@@ -1,0 +1,311 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.zack.intelligent.fragment.LockFragment">
+
+    <ScrollView
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dimen_3dp">
+
+                <EditText
+                    android:id="@+id/edt_query_lock_exist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入锁地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_query_lock_exist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询锁在不在" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dimen_3dp">
+
+                <EditText
+                    android:id="@+id/edt_query_lock_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入锁地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_query_lock_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查询枪锁状态" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/dimen_3dp">
+
+                <EditText
+                    android:id="@+id/edt_open_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入锁地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_open_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开锁" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_set_lock_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入锁地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_set_lock_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置锁地址" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_set_bullet_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入子弹盒地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_set_bullet_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置子弹重量" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_read_bullet_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入子弹盒地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_read_bullet_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="读取子弹重量" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_read_bullet_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入子弹盒地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_read_bullet_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="读取子弹个数" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_set_tare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入子弹盒地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_set_tare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置皮重" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_open_new_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="输入枪锁地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_open_cab_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:text="打开枪柜" />
+
+            <Button
+                android:id="@+id/btn_open_all_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:text="打开所有枪锁" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_left_cab_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="左柜门地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:layout_margin="@dimen/dimen_5dp"/>
+
+                <EditText
+                    android:id="@+id/et_right_cab_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="右柜门地址"
+                    android:ems="5"
+                    android:maxLines="1"
+                    android:background="@drawable/shape_edt_bg"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_set_cab_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_lock_receive_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textSize="@dimen/default_text_size"
+            android:editable="false"/>
+
+        <Button
+            android:id="@+id/lock_btn_clear_recv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除接收数据"/>
+    </LinearLayout>
+</LinearLayout>

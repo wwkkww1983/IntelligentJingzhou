@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UserActivity">
+
+    <include layout="@layout/ac_top_layout_status" />
+
+    <include
+        layout="@layout/ac_top_layout_func"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_list_tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="警员管理"
+            android:textSize="40sp"/>
+
+        <LinearLayout
+            android:id="@+id/user_ll_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/task_item_bg"
+            android:layout_below="@+id/user_list_tv_tittle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="姓名"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="警号"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="权限"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="单位"
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:text="电话号码"
+                android:textColor="@android:color/holo_blue_bright" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/user_lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/user_ll_bottom"
+            android:layout_below="@+id/user_ll_tittle"
+            android:choiceMode="singleChoice"
+            android:background="@color/task_item_default_color"
+            android:listSelector="@color/bg_blue">
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/user_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/user_btn_pre_page"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="上一页" />
+
+            <TextView
+                android:id="@+id/user_tv_cur_page"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="1/1" />
+
+            <Button
+                android:id="@+id/user_btn_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="下一页" />
+
+            <Button
+                android:id="@+id/user_btn_finger"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="指纹" />
+
+            <Button
+                android:id="@+id/user_btn_vein"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="指静脉" />
+
+            <Button
+                android:id="@+id/user_btn_iris"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="虹膜" />
+
+            <Button
+                android:id="@+id/user_btn_face"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="人脸" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zack_logo_circle"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:text="@string/company_name"
+            android:textSize="@dimen/text_size_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_shortgun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq1"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq2"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq3"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq4"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq5"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq6"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_shortgun2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ll_shortgun"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq7"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq8"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq9"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq10"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq11"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq12"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_shortgun3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ll_shortgun2"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq13"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq14"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq15"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq16"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq17"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq18"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_shortgun4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ll_shortgun3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_01">
+
+            <ImageView
+                android:id="@+id/main_iv_dq19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq19"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_rl_short_gun_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/short_gun_bg_02">
+
+            <ImageView
+                android:id="@+id/main_iv_dq20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/short_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_short_gun_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_dq20"
+                android:layout_centerHorizontal="true"
+                android:text="短枪"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_ll_shortgun3"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_long1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/longgun01">
+
+            <ImageView
+                android:id="@+id/main_iv_cq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/long_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_long_gun_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_cq1"
+                android:layout_centerHorizontal="true"
+                android:text="长枪"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_long2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/longgun02">
+
+            <ImageView
+                android:id="@+id/main_iv_cq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/long_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_long_gun_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_cq2"
+                android:layout_centerHorizontal="true"
+                android:text="长枪"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_long3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/longgun01">
+
+            <ImageView
+                android:id="@+id/main_iv_cq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/long_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_long_gun_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_cq3"
+                android:layout_centerHorizontal="true"
+                android:text="长枪"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_long4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/longgun02">
+
+            <ImageView
+                android:id="@+id/main_iv_cq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/long_gun" />
+
+            <TextView
+                android:id="@+id/main_tv_long_gun_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_iv_cq4"
+                android:layout_centerHorizontal="true"
+                android:text="长枪"
+                android:textSize="@dimen/text_size_12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_ll_ammo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/main_ll_shortgun"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/main_rl_ammo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/bg_dy01">
+
+            <ImageView
+                android:id="@+id/main_iv_ammo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:src="@drawable/bullet" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo1"
+                android:text="短枪子弹"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_iv_ammo1"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo1"
+                android:text="0发" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_ammo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/bg_dy02">
+
+            <ImageView
+                android:id="@+id/main_iv_ammo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:src="@drawable/bullet" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo2"
+                android:text="短枪子弹"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_num_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_iv_ammo2"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo2"
+                android:text="0发" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_ammo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/bg_dy03">
+
+            <ImageView
+                android:id="@+id/main_iv_ammo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:src="@drawable/bullet" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo3"
+                android:text="长枪子弹"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_num_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_iv_ammo3"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo3"
+                android:text="0发" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_ammo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_3dp"
+            android:background="@drawable/bg_dy04">
+
+            <ImageView
+                android:id="@+id/main_iv_ammo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:src="@drawable/ic_clip" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo4"
+                android:text="弹匣"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <TextView
+                android:id="@+id/main_tv_ammo_num_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_iv_ammo4"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_toRightOf="@+id/main_iv_ammo4"
+                android:text="0发" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">智能枪弹库管理系统</string>
+    <string name="net_normal">网络正常</string>
+    <string name="net_disconnect">断开连接</string>
+    <string name="open_device">正在打开设备</string>
+    <string name="wait_dialog_title">正在请求，请稍后…</string>
+
+    <!-- error -->
+    <string name="error_please_check_network">请检查网络。</string>
+    <string name="error_timeout">请求超时，网络不好或者服务器不稳定。</string>
+    <string name="error_not_found_server">未发现指定服务器，清切换网络后重试。</string>
+    <string name="error_url_error">URL错误。</string>
+    <string name="error_not_found_cache">没有找到缓存.</string>
+    <string name="error_unknow">未知错误。</string>
+    <string name="network_error_unknow">网络异常。</string>
+    <string name="can_not_connect_server">无法连接服务器。</string>
+    <string name="error_response_code">服务器响应码%1$d</string>
+    <string name="error_response_code_dex">服务器响应码%1$d，如果你们服务器在这种情况下也返回数据你可以处理。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown reason.</string>
+    <string name="current_room_info">当前监控室信息</string>
+    <string name="current_cab_info">当前枪柜信息</string>
+    <string name="gun_status_query">枪支状态查询</string>
+    <!--requestMethod-->
+    <string name="request_json_result">请求方法：%1$s\n请求地址：%2$s\n响应数据：%3$s\n业务状态码：%4$s。</string>
+    <string name="request_succeed_head">请求成功, 请求方式为HEAD, 没有响应内容。</string>
+    <string name="request_method_head">请求方法为HEAD，没有响应内容。</string>
+    <string name="request_method_patch">服务器不支持的请求方法。</string>
+    <string name="request_method_not_allow">服务器仅仅支持请求方法：%1$s</string>
+    <string name="request_succeed">请求成功</string>
+    <string name="duty_manager_verify">请值班管理员验证身份</string>
+    <string name="power_status_normal">市电正常</string>
+    <string name="net_status_normal">网络正常</string>
+    <string name="net_status_disconnect">网络断开</string>
+    <string name="date_time">日期时间</string>
+    <string name="task_go">出 警</string>
+    <string name="task_urgent_go">紧急出警</string>
+    <string name="task_apply_for_go">申请出警</string>
+    <string name="query_info">信息查询</string>
+    <string name="on_duty_manage">值班管理</string>
+    <string name="task_keep">枪支保养</string>
+    <string name="task_scrap">枪支报废</string>
+    <string name="task_store">枪弹入库</string>
+    <string name="task_temporary_deposit">临时存放枪支</string>
+    <string name="task_in_store">枪弹入库</string>
+    <string name="finger_manage">指纹管理</string>
+    <string name="user_manage">人员管理</string>
+    <string name="current_task_info">当前任务信息</string>
+
+    <string name="pick_time_cancle">取消</string>
+    <string name="pick_time_title">请选择时间</string>
+    <string name="pick_time_commit">确定</string>
+    <string name="pick_time_year">年</string>
+    <string name="pick_time_month">月</string>
+    <string name="pick_time_day">日</string>
+    <string name="pick_time_hour">时</string>
+    <string name="pick_time_minute">分</string>
+
+    <string name="pick_time_select_date">选择日期</string>
+    <string name="pick_time_current_date">当前日期</string>
+    <string name="pick_time_select_time">选择时间</string>
+    <string name="pick_time_current_time">当前时间</string>
+    <string name="task_type">任务类型：</string>
+    <!--默认时间-->
+    <string name="default_time">88:88:88</string>
+    <string name="iris_register_delete">点击注册/删除虹膜</string>
+    <!--相机-->
+    <string name="can_not_open_camera">无法打开摄像头</string>
+    <string name="permission_not_available">相机权限无效</string>
+    <string name="cannot_write_image_captured">无法保存照片，请检查写入权限</string>
+    <string name="no_front_camera">你的设备没有前置摄像头</string>
+
+
+    <string name="company_name">中安创科（深圳）技术有限公司</string>
+    <string name="main_home_text">主页</string>
+    <string name="main_attention_text">其它</string>
+    <string name="com_name">中国航天</string>
+</resources>

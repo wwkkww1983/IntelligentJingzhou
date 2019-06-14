@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/alarm_info_item_txt_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/alarm_info_item_txt_type"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/alarm_info_item_txt_time"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/alarm_info_item_txt_status"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/alarm_info_item_relieve_police"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/alarm_info_item_txt_content"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+</LinearLayout>

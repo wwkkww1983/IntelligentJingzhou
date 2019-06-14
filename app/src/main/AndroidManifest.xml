@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zack.intelligent"
+    android:sharedUserId="android.uid.system"
+    >
+
+    <!--android:installLocation="preferExternal"-->
+    <!-- 开机自启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取日志信息 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 调整音量 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS"/> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/> -->
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 重启 -->
+    <uses-permission
+        android:name="android.permission.REBOOT"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 设置时间 -->
+    <uses-permission
+        android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 相机 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/intelligent"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 系统设置 -->
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 紧急出警 -->
+        <activity
+            android:name=".ui.UrgentGoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 出警任务 -->
+        <!-- 枪弹保养 -->
+        <activity
+            android:name=".ui.KeepActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 信息查询 -->
+        <activity
+            android:name=".ui.QueryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- 枪弹报废 -->
+        <activity
+            android:name=".ui.ScrapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 临时存放 -->
+        <activity
+            android:name=".ui.TempStoreActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <!-- 指纹管理 -->
+        <!-- 值班管理 -->
+        <activity
+            android:name=".ui.ExchangeActivity"
+            android:launchMode="singleTask" />
+
+        <service android:name=".service.AlarmService" />
+
+        <activity
+            android:name=".ui.BackActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.IntegratedActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name=".service.CaptureService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.UserActivity" />
+        <activity android:name=".ui.GetActivity" />
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.InStoreActivity"></activity>
+
+    </application>
+
+</manifest>

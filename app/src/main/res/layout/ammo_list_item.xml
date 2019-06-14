@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:background="@drawable/bg_dy03">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/item_iv_object_img"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:src="@drawable/short_gun" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_object_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/item_iv_object_img"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="92式手枪子弹" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_object_number"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/item_iv_object_img"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="数量" />-->
+
+    <ImageView
+        android:id="@+id/item_iv_object_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:src="@drawable/yql"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/item_iv_object_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:src="@drawable/bullet" />
+
+    <TextView
+        android:id="@+id/item_object_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toRightOf="@+id/item_iv_object_img"
+        android:text="短枪子弹"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/item_object_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_iv_object_img"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_toRightOf="@+id/item_iv_object_img"
+        android:text="0发" />
+
+</RelativeLayout>

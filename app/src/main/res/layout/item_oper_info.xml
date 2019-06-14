@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/oper_info_item_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_police_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_add_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_task_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_oper_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_obj_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+    <TextView
+        android:id="@+id/oper_info_item_obj_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        />
+
+</LinearLayout>

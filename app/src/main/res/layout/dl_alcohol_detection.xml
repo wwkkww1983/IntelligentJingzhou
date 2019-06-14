@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:background="@drawable/ac_main_bg_line">
+
+    <TextView
+        android:id="@+id/dl_alcohol_txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在检测酒精浓度值 \n\n请对酒精检测孔吹气\n"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dl_alcohol_txt_msg"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒精浓度值："
+            />
+
+        <TextView
+            android:id="@+id/dl_alcohol_txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0mg/100ml"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dl_alcohol_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/close_dialog"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_10dp"/>
+
+    <TextView
+        android:id="@+id/dl_alcohol_txt_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_5dp"/>
+
+</RelativeLayout>

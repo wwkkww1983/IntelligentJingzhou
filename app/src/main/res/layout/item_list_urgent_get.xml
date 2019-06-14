@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60dp"
+    android:gravity="center_vertical"
+    android:id="@+id/list_item_ll_root"
+    android:background="@color/task_item_default_color"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/list_item_tv_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="手枪" />
+
+    <TextView
+        android:id="@+id/list_item_tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="在库" />
+
+    <TextView
+        android:id="@+id/list_item_tv_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/list_item_edt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edt_bg"
+            android:text="1"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:maxLength="5"
+            android:ems="3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_item_rl_get_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/list_item_edt_get_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edt_bg"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:ems="3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/list_item_cb_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="领取"
+            android:button="@drawable/selector_cb_bg"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

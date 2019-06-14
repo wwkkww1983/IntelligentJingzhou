@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.VerifyIrisFragment">
+
+    <ImageView
+        android:id="@+id/verify_iris_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/face_detect"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/verify_iris_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="虹膜识别"
+        android:layout_below="@+id/verify_iris_iv_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        />
+
+</RelativeLayout>
